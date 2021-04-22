@@ -8,10 +8,11 @@ public class Merge {
             rsl[i] = left[i];
             s += 1;
         }
-        for (int i = 0; i < right.length; i++) {
-            rsl[s] = right[i];
+        for (int array : right) {
+            rsl[s] = array;
             s += 1;
         }
+        SortSelected.sort(rsl);
         return rsl;
     }
 }
